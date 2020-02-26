@@ -1,0 +1,20 @@
+Jimmy Botero
+CS310 Spring 2018
+Project 4
+G01014336
+Lecture: 003
+George Mason University
+  
+Design Document:
+	-Description for Underlying Data Structures for Interfaces:
+		-MyPriorirtyQueue uses array in order to simulate a binary heap. This meets the Big-O requirements for all methods by simulating a complete binary tree
+		using the array, hitting the logN requirements by incrementing the i value in the for loops by either "i * 2" or "i * 2 + 1" for insert and remove.
+		
+		-MySymbolTable uses a HashMap in order to keep track of all the symbols and records being stored. HashMap was imported, as per the design specs, and meets all Big-O requirements
+		with very little modification.
+		
+		-MySequence uses a TreeSet in order to make the collection. TreeSet is imported, as per the design specs, and meets all logN requirements by its very nature. CountNoSmallerThan uses 
+		the TreeSet method tailSet in order to find all values greater than or equal to the specified one. This value is then returned in my method. 
+	-Code Reference:
+		-TreeSet was imported from the java.util library, HashMap was also imported from this same library. 
+	
